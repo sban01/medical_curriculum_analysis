@@ -1,4 +1,4 @@
-# Medical Semantics - Learning Objectives Analysis
+# Medical School Curriculum Analysis - Learning Objectives
 
 Tools for extracting and analyzing action verbs from educational learning objectives using Bloom's Taxonomy, with optional biomedical concept recognition via MetaMap.
 
