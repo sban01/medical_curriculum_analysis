@@ -23,6 +23,17 @@ The file contains three columns:
 - `verb` - The action verb
 - `bloomlvl` - Numeric Bloom's Taxonomy level (1-6 scale)
 
+### concepts.csv
+
+The list of UMLS concepts recognised in the learning objectives, including frequency counts.
+
+The file contains 5 columns:
+- `cui` - UMLS unique concept ID (CUI - Concept Unique Identifiers)
+-	`preferred_name` - Preferred cconcpet name in the UMLS corpus
+- `semantic_types` - Concept semantic types(s), as identified by metamap via the UML corpus
+- `token` - the word(s) in the leanring objective text which triggered the concept recognition
+- `frequency` - Frequency count for appearances of the concept across all learning objectives
+
 ### objectives.csv
 
 Your input file containing learning objectives. Required column layout:
@@ -111,7 +122,7 @@ To use the concept mapping script:
 1. Install MetaMap locally
 2. Obtain UMLS credentials and API keys
 3. Modify `map_concepts_metamap.py` to point to your local MetaMap server
-4. Update the `email` and `apikey` variables with your UMLS credentials
+4. Update the `email` and `apikey` variables with your UMLS credentials if required
 
 ## Project Structure
 
@@ -125,7 +136,9 @@ To use the concept mapping script:
 ├── Concept.py                      # MetaMap concept classes
 ├── analysisAV.R                    # R analysis script
 ├── BloomsLists_NewtonEtAL_2020.csv # Action verb Bloom level reference
+└── concepts.csv                    # Recognized UMLS concepts from all learning objectives
 └── objectives.csv                  # Input file (your learning objectives)
+└── curriculum.db                   # SQLite database to build action verb and concept maps, also contains some pre-processing filtering tables
 ```
 
 ## License
