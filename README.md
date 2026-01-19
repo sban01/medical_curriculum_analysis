@@ -143,7 +143,8 @@ To use the concept mapping script:
 
 ## License
 
-The `Concept.py` file contains code adapted from [pymetamap](https://github.com/AnthonyMRios/pymetamap), licensed under the Apache License 2.0.
+The project is released under the Apachae license, see LICENSE.txt. The `Concept.py` file contains code adapted from
+ [pymetamap](https://github.com/AnthonyMRios/pymetamap), also licensed under the Apache License 2.0.
 
 ## Author
 
